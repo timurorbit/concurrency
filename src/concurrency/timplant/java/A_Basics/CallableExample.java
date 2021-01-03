@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 /*
- to get value from callable in future and start a thread later, control result of callable. Use FutureTask
+ To get value from callable in future and start a thread later, control result of callable. Use FutureTask
  */
 public class CallableExample {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
