@@ -53,11 +53,8 @@ class Resource {
      Only a single thread can execute him (or blocked in a same time
      Never combine static synchronized method with synchronized methods
      */
-    public synchronized void incrementI() {
+    public synchronized void incrementI() {  // synchronized method blocking whole class
         int i = this.i;
-        if (Thread.currentThread().getName().equals("Thread-0")) {
-            Thread.yield();
-        }
         i++;
         this.i = i;
     }
